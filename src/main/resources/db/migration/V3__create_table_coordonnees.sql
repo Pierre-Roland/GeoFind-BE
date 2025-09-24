@@ -1,8 +1,9 @@
 -- Création de la table users dans le schéma demo
 CREATE TABLE IF NOT EXISTS geofind.coordonnees (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    zoom LONG NOT NULL,
-    center1 float NOT NULL,
-    center2 float NOT NULL,
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    zoom BIGINT NOT NULL,
+    center1 Double NOT NULL,
+    center2 Double NOT NULL,
+    country varchar(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );

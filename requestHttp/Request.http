@@ -1,0 +1,12 @@
+### POST request to add data in db
+POST http://localhost:8080/maps/save
+Content-Type: application/json
+
+{
+  "zoom": 10,
+  "center1": 45.0,
+  "center2": -0.08,
+  "country": "France"
+}
+
+###
