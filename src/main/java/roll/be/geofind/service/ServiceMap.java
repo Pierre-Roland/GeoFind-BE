@@ -11,7 +11,15 @@ public class ServiceMap {
 
     public ServiceMap(RepositoryMap repositoryMap) {this.repositoryMap = repositoryMap;}
 
-    public Coordonnees SaveCoordonnees(Coordonnees coordonnees) {
+    public Coordonnees saveCoordonnees(Coordonnees coordonnees) {
         return repositoryMap.save(coordonnees);
+    }
+
+    public Coordonnees getCoordonnees(String country) {
+        return repositoryMap.findByCountry(country);
+    }
+
+    public void deleteCoordonnees(String country) {
+        repositoryMap.deleteByCountry(country);
     }
 }

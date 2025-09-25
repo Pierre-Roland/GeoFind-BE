@@ -9,4 +9,10 @@ Content-Type: application/json
   "country": "France"
 }
 
-###
+### GET data on the country
+GET http://localhost:8080/maps/France
+Content-Type: application/json
+
+### DELETE data on the country
+DELETE http://localhost:8080/maps/France
+Content-Type: application/json
