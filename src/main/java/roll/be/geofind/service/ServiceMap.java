@@ -7,19 +7,39 @@ import roll.be.geofind.repository.RepositoryMap;
 @Service
 public class ServiceMap {
 
+    Coordonnees countryNotFound = new Coordonnees();
+
+    Coordonnees countryFound = new Coordonnees();
+
     private final RepositoryMap repositoryMap;
 
     public ServiceMap(RepositoryMap repositoryMap) {this.repositoryMap = repositoryMap;}
 
-    public Coordonnees saveCoordonnees(Coordonnees coordonnees) {
-        return repositoryMap.save(coordonnees);
+    public Coordonnees saveCoordonnees(Coordonnees coordonnees, String country) {
+        countryNotFound.setCountry("");
+        Coordonnees countryInDB = getCoordonnees(country);
+        if (countryInDB == null) {
+            return repositoryMap.save(coordonnees);
+        }
+        else {
+            return countryNotFound;
+        }
     }
 
     public Coordonnees getCoordonnees(String country) {
         return repositoryMap.findByCountry(country);
     }
 
-    public void deleteCoordonnees(String country) {
-        repositoryMap.deleteByCountry(country);
+    public Coordonnees deleteCoordonnees(String country) {
+        countryNotFound.setCountry("");
+        countryFound.setCountry("found");
+        Coordonnees countryInDB = getCoordonnees(country);
+        if (countryInDB != null) {
+            repositoryMap.deleteByCountry(country);
+            return countryFound;
+        }
+        else {
+            return countryNotFound;
+        }
     }
 }

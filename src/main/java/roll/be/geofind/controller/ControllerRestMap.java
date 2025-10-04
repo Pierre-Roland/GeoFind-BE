@@ -19,13 +19,12 @@ public class ControllerRestMap {
 
     @PostMapping("/save")
     public ResponseEntity<Coordonnees> SaveCoordonnees(@RequestBody Coordonnees coordonnees) {
-        Coordonnees countryInDB = serviceMap.getCoordonnees(coordonnees.getCountry());
-        if (countryInDB == null) {
-            Coordonnees saved = serviceMap.saveCoordonnees(coordonnees);
-            return ResponseEntity.status(HttpStatus.CREATED).body(saved);
+        Coordonnees saved = serviceMap.saveCoordonnees(coordonnees, coordonnees.getCountry());
+        if (saved.getCountry().isEmpty()) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(saved);
         }
         else {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(countryInDB);
+            return ResponseEntity.status(HttpStatus.CREATED).body(saved);
         }
     }
 
@@ -42,16 +41,12 @@ public class ControllerRestMap {
 
     @DeleteMapping("/{country}")
     public ResponseEntity<Coordonnees> DeleteCoordonnees(@PathVariable String country ) {
-        Coordonnees countryInDB = serviceMap.getCoordonnees(country);
-        System.out.println(countryInDB);
-        if (countryInDB == null) {
-            System.out.println("Country not found");
+        Coordonnees deleted = serviceMap.deleteCoordonnees(country);
+        if (deleted.getCountry().isEmpty()) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
         else {
-            System.out.println("Deleting " + countryInDB);
-            serviceMap.deleteCoordonnees(country);
-            return ResponseEntity.status(HttpStatus.NO_CONTENT).body(countryInDB);
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).body(null);
         }
     }
 }
