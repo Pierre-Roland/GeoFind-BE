@@ -2,6 +2,9 @@ package roll.be.geofind;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.security.core.token.TokenService;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
@@ -18,6 +21,11 @@ public class WebConfig {
                         .allowedHeaders("*");
             }
         };
+    }
+
+    @Bean
+    public JavaMailSender getJavaMailSender() {
+        return new JavaMailSenderImpl();
     }
 }
 
