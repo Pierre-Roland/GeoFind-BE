@@ -6,7 +6,8 @@ import roll.be.geofind.model.User;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long> {
-    long countByAdminTrue();
 
-    User findByIdUser(long id);
+    User findUserById(Long id);
+
+    User findUserByUsername(String username);
 }

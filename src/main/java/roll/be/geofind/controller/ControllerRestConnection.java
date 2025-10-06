@@ -4,6 +4,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import roll.be.geofind.model.User;
+import roll.be.geofind.model.UserInscription;
 import roll.be.geofind.service.ServiceConnection;
 
 @RestController
@@ -17,24 +18,28 @@ public class ControllerRestConnection {
     }
 
     @PostMapping("/save")
-    public ResponseEntity<User> SaveUser(@RequestBody User user) {
-        User saved = serviceConnection.saveUser(user);
-        if (saved.getPassword().isEmpty()) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(saved);
+    public ResponseEntity<UserInscription> SaveUser(@RequestBody UserInscription user) {
+        user.setAdmin(false);
+        UserInscription saved = serviceConnection.saveUser(user);
+        System.out.println(saved);
+        if (saved.getPassword() == null) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).body(user);
         }
         else {
             return ResponseEntity.status(HttpStatus.CREATED).body(saved);
         }
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<User> getUser(@PathVariable Long id ) {
-        User userInDb = serviceConnection.getUser(id);
-        if (userInDb == null) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+    @GetMapping("/identification")
+    public ResponseEntity<Boolean> getUser(@RequestBody User user ) {
+        user.setAdmin(false);
+        boolean userInDb = serviceConnection.verifyLogin(user.getUsername(), user.getPassword());
+        System.out.println(userInDb);
+        if (!userInDb) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(false);
         }
         else {
-            return ResponseEntity.status(HttpStatus.OK).body(userInDb);
+            return ResponseEntity.status(HttpStatus.OK).body(true);
         }
     }
 

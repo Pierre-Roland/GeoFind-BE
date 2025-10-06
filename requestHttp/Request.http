@@ -16,3 +16,26 @@ Content-Type: application/json
 ### DELETE data on the country
 DELETE http://localhost:8080/maps/France
 Content-Type: application/json
+
+### POST request to save user in db
+POST http://localhost:8080/users/save
+Content-Type: application/json
+
+{
+  "username": "Pierre",
+  "password": "test123",
+  "email": "proland@arbeaumont.eu"
+}
+
+### GET data on saved user
+GET http://localhost:8080/users/identification
+Content-Type: application/json
+
+{
+  "username": "Pierres",
+  "password": "test123"
+}
+
+### DELETE data on the country
+DELETE http://localhost:8080/users/3
+Content-Type: application/json
