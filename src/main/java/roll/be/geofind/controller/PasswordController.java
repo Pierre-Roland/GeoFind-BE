@@ -1,12 +1,13 @@
 package roll.be.geofind.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import roll.be.geofind.model.PasswordResetToken;
+import roll.be.geofind.model.ResetPasswordRequest;
 import roll.be.geofind.model.UserInscription;
 import roll.be.geofind.repository.PasswordResetTokenRepository;
 import roll.be.geofind.repository.UserRepositoryInscription;
@@ -18,6 +19,9 @@ import java.time.LocalDateTime;
 @RestController
 @RequestMapping("/auth")
 public class PasswordController {
+
+    @Autowired
+    private JavaMailSender mailSender;
 
     private final PasswordResetService resetService;
     private final TokenService tokenService;
@@ -40,20 +44,18 @@ public class PasswordController {
     }
 
     @PostMapping("/reset-password")
-    public ResponseEntity<String> resetPassword(@RequestParam Long uid,
-                                                @RequestParam String token,
-                                                @RequestParam String newPassword) {
-        UserInscription user = userRepositoryInscription.findById(uid).orElseThrow();
+    public ResponseEntity<String> resetPassword(@RequestBody ResetPasswordRequest request) {
+        UserInscription user = userRepositoryInscription.findById(request.getUid()).orElseThrow();
         PasswordResetToken resetToken = passwordResetTokenRepository.findByUser(user)
                 .orElseThrow();
 
-        String hashedToken = tokenService.hashToken(token);
+        String hashedToken = tokenService.hashToken(request.getToken());
 
         if (!resetToken.getToken().equals(hashedToken) || resetToken.getExpiryDate().isBefore(LocalDateTime.now())) {
             return ResponseEntity.badRequest().body("Token invalide ou expiré");
         }
 
-        user.setPassword(new BCryptPasswordEncoder().encode(newPassword));
+        user.setPassword(new BCryptPasswordEncoder().encode(request.getNewPassword()));
         userRepositoryInscription.save(user);
 
         passwordResetTokenRepository.delete(resetToken);
@@ -61,5 +63,20 @@ public class PasswordController {
         return ResponseEntity.ok("Mot de passe réinitialisé avec succès !");
     }
 
+    @GetMapping("/test-mail")
+    public String testMail() {
+        try {
+            SimpleMailMessage message = new SimpleMailMessage();
+            message.setFrom("pierreroll04@gmail.com");
+            message.setTo("pierreroll04@gmail.com");
+            message.setSubject("Test SendGrid");
+            message.setText("Ceci est un test de SendGrid via Spring Boot.");
+            mailSender.send(message);
+            return "Mail envoyé avec succès !";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Erreur : " + e.getMessage();
+        }
+    }
 }
 

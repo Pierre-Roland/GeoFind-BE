@@ -12,4 +12,6 @@ public interface PasswordResetTokenRepository extends CrudRepository<PasswordRes
 
     // Optionnel : si tu veux vérifier par token aussi
     Optional<PasswordResetToken> findByToken(String token);
+
+    void deleteAllByUser(UserInscription user);
 }

@@ -16,10 +16,10 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/maps/**")
+                registry.addMapping("/**")
                         .allowedOrigins("http://localhost:4200")
-                        .allowedMethods("GET", "POST", "PUT", "DELETE")
-                        .allowedHeaders("*");
+                        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+                        .allowCredentials(true);
             }
         };
     }
@@ -30,7 +30,7 @@ public class WebConfig {
         mailSender.setHost("smtp.sendgrid.net");
         mailSender.setPort(587);
         mailSender.setUsername("apikey");
-        mailSender.setPassword(System.getenv("SENDGRID_API_KEY")); // utilise la variable d'environnement
+        mailSender.setPassword("secret");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
@@ -42,6 +42,5 @@ public class WebConfig {
 
         return mailSender;
     }
-
 }
 

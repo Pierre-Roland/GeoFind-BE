@@ -22,7 +22,7 @@ POST http://localhost:8080/users/save
 Content-Type: application/json
 
 {
-  "username": "Pierre",
+  "username": "PierreKleiver",
   "password": "test123",
   "email": "proland@arbeaumont.eu"
 }
@@ -32,10 +32,30 @@ GET http://localhost:8080/users/identification
 Content-Type: application/json
 
 {
-  "username": "Pierres",
-  "password": "test123"
+  "username": "PierreKleiver",
+  "password": "test"
 }
 
 ### DELETE data on the country
 DELETE http://localhost:8080/users/3
 Content-Type: application/json
+
+### GET send mail to check
+GET http://localhost:8080/auth/test-mail
+Content-Type: application/json
+
+### POST request to ask for password reset
+POST http://localhost:8080/auth/forgot-password
+Content-Type: application/x-www-form-urlencoded
+
+email=proland@arbeaumont.eu
+
+### POST request to reset password
+POST http://localhost:8080/auth/reset-password
+Content-Type: application/x-www-form-urlencoded
+
+uid=1
+token=abcdef123456789   # <-- remplace par le vrai token affiché ou reçu
+newPassword=nouveauSecret123
+
+

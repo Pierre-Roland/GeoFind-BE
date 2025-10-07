@@ -8,11 +8,7 @@ import roll.be.geofind.model.UserInscription;
 import roll.be.geofind.repository.PasswordResetTokenRepository;
 import roll.be.geofind.repository.UserRepositoryInscription;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.time.LocalDateTime;
-import java.util.Base64;
-import java.util.UUID;
 
 @Service
 public class PasswordResetService {
@@ -33,7 +29,10 @@ public class PasswordResetService {
     }
 
     public void createPasswordResetToken(String email) {
+        System.out.println("Creating password reset token");
         UserInscription user = userRepository.findByEmail(email).orElseThrow();
+
+        //tokenRepository.deleteAllByUser(user);
 
         String rawToken = tokenService.generateToken();
         String hashedToken = tokenService.hashToken(rawToken);
@@ -45,8 +44,9 @@ public class PasswordResetService {
 
         tokenRepository.save(resetToken);
 
-        String resetLink = "http://localhost:8080/reset-password?token=" + rawToken + "&uid=" + user.getId();
+        String resetLink = "http://localhost:4200/reset-password?token=" + rawToken + "&uid=" + user.getId();
         SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("pierreroll04@gmail.com");
         message.setTo(user.getEmail());
         message.setSubject("Réinitialisation de mot de passe");
         message.setText("Cliquez ici pour réinitialiser : " + resetLink);
