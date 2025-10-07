@@ -31,9 +31,9 @@ public class ControllerRestConnection {
     }
 
     @GetMapping("/identification")
-    public ResponseEntity<Boolean> getUser(@RequestBody User user ) {
-        user.setAdmin(false);
-        boolean userInDb = serviceConnection.verifyLogin(user.getUsername(), user.getPassword());
+    public ResponseEntity<Boolean> getUser(@RequestParam String username,
+                                           @RequestParam String password) {
+        boolean userInDb = serviceConnection.verifyLogin(username, password);
         System.out.println(userInDb);
         if (!userInDb) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(false);
