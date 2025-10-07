@@ -4,9 +4,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
-import org.springframework.security.core.token.TokenService;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import java.util.Properties;
 
 @Configuration
 public class WebConfig {
@@ -25,7 +26,22 @@ public class WebConfig {
 
     @Bean
     public JavaMailSender getJavaMailSender() {
-        return new JavaMailSenderImpl();
+        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+        mailSender.setHost("smtp.sendgrid.net");
+        mailSender.setPort(587);
+        mailSender.setUsername("apikey");
+        mailSender.setPassword(System.getenv("SENDGRID_API_KEY")); // utilise la variable d'environnement
+
+        Properties props = mailSender.getJavaMailProperties();
+        props.put("mail.transport.protocol", "smtp");
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.ssl.trust", "smtp.sendgrid.net");
+        props.put("mail.smtp.starttls.required", "true");
+        props.put("mail.debug", "true");
+
+        return mailSender;
     }
+
 }
 
