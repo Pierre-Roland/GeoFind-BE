@@ -16,8 +16,8 @@ public class ControllerRestDescriptionLieu {
         this.serviceDescriptionLieu = serviceDescriptionLieu;
     }
 
-    @GetMapping
-    public ResponseEntity<DescriptionLieu> getDescription(@RequestParam String lieu) {
+    @GetMapping("/{lieu}")
+    public ResponseEntity<DescriptionLieu> getDescription(@PathVariable String lieu) {
         DescriptionLieu descriptionLieu = serviceDescriptionLieu.getDescriptionLieu(lieu);
         if (descriptionLieu == null) {
             return ResponseEntity.notFound().build();
