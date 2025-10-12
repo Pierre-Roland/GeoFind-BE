@@ -24,6 +24,8 @@ public class Coordonnees {
     private Double center2;
     @Column(name = "country")
     private String country;
+    @Column(name = "times_visited")
+    private Long timesVisited;
 }
 
 

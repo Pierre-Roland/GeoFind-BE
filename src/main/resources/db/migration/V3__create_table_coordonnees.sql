@@ -5,5 +5,6 @@ CREATE TABLE IF NOT EXISTS geofind.coordonnees (
     center1 Double NOT NULL,
     center2 Double NOT NULL,
     country varchar(255),
+    times_visited BIGINT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
