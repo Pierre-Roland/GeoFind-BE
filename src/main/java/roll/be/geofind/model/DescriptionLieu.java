@@ -18,7 +18,7 @@ public class DescriptionLieu {
     private Long id;
     @Column(name = "lieu", nullable = false)
     private String lieu;
-    @Column(name = "image", nullable = false)
+    @Column(name = "image", nullable = false, columnDefinition = "VARCHAR(1024)")
     private String image;
     @Column(columnDefinition = "TEXT", nullable = false)
     private String description;
