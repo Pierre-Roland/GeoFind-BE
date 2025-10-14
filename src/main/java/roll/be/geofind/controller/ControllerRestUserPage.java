@@ -60,4 +60,17 @@ public class ControllerRestUserPage {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Impossible de trouver ce link country user : " + e.getMessage());
         }
     }
+
+    @DeleteMapping("/delete")
+    public ResponseEntity<?> deleteOneFav(@RequestBody LinkCountryUser linkCountryUser) {
+        try {
+            serviceLinkCountryUser.deleteLinkCountryUser(linkCountryUser);
+            return ResponseEntity.status(HttpStatus.OK)
+                    .body("Favori supprimé : " + linkCountryUser.getCountry() + " pour l'utilisateur " + linkCountryUser.getUsername());
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("Erreur lors de la suppression du favori : " + e.getMessage());
+        }
+    }
 }

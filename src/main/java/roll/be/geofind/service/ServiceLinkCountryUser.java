@@ -1,5 +1,6 @@
 package roll.be.geofind.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import roll.be.geofind.model.LinkCountryUser;
 import roll.be.geofind.repository.RepositoryLinkCountryUser;
@@ -29,5 +30,13 @@ public class ServiceLinkCountryUser {
 
     public List<LinkCountryUser> getAllLinkCountryOfUser(String username) {
         return this.repositoryLinkCountryUser.findAllByUsername(username);
+    }
+
+    @Transactional
+    public void deleteLinkCountryUser(LinkCountryUser linkCountryUser) {
+        repositoryLinkCountryUser.deleteByUsernameAndCountry(
+                linkCountryUser.getUsername(),
+                linkCountryUser.getCountry()
+        );
     }
 }

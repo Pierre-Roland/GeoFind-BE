@@ -67,5 +67,14 @@ Content-Type: application/json
 GET http://localhost:8080/userPage/pierre
 Accept: application/json
 
+### DELETE link user country
+DELETE http://localhost:8080/userPage/delete
+Content-Type: application/json
+
+{
+  "username": "pierre",
+  "country": "belgique"
+}
+
 
 
