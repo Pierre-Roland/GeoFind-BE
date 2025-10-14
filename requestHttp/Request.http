@@ -54,7 +54,18 @@ email=proland@arbeaumont.eu
 GET http://localhost:8080/description?lieu=belgique
 Accept: application/json
 
+### POST link user country
+POST http://localhost:8080/userPage/save
+Content-Type: application/json
 
+{
+  "username": "pierre",
+  "country": "belgique"
+}
+
+### GET all link user country
+GET http://localhost:8080/userPage/pierre
+Accept: application/json
 
 
 

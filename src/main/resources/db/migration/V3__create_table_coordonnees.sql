@@ -4,7 +4,7 @@ CREATE TABLE IF NOT EXISTS geofind.coordonnees (
     zoom BIGINT NOT NULL,
     center1 Double NOT NULL,
     center2 Double NOT NULL,
-    country varchar(255),
+    country varchar(255) UNIQUE NOT NULL,
     times_visited BIGINT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
