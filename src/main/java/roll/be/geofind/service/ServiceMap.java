@@ -1,5 +1,6 @@
 package roll.be.geofind.service;
 
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 import roll.be.geofind.model.Coordonnees;
 import roll.be.geofind.repository.RepositoryMap;
@@ -13,8 +14,10 @@ public class ServiceMap {
 
     private final RepositoryMap repositoryMap;
 
+
     public ServiceMap(RepositoryMap repositoryMap) {this.repositoryMap = repositoryMap;}
 
+    @Transactional
     public Coordonnees saveCoordonnees(Coordonnees coordonnees, String country) {
         countryNotFound.setCountry("");
         Coordonnees countryInDB = getCoordonnees(country);
@@ -26,10 +29,16 @@ public class ServiceMap {
         }
     }
 
+    @Transactional
     public Coordonnees getCoordonnees(String country) {
-        return repositoryMap.findByCountry(country);
+        Coordonnees countryInDb = repositoryMap.findByCountry(country);
+        if (countryInDb != null) {
+            countryInDb.setTimesVisited(countryInDb.getTimesVisited() + 1);
+        }
+        return countryInDb;
     }
 
+    @Transactional
     public Coordonnees deleteCoordonnees(String country) {
         countryNotFound.setCountry("");
         countryFound.setCountry("found");

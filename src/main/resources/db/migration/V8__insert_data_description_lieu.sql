@@ -28,12 +28,37 @@ INSERT INTO geofind.description_lieu (lieu, image, description) VALUES
 ),
 (
     'suisse',
- 'https://viaverbia.be/sites/viaverbia-belgium.be/files/styles/news_image/public/images/articles/gids-talen-zwitserland.jpg?itok=XmrGbdAi',
+    'https://viaverbia.be/sites/viaverbia-belgium.be/files/styles/news_image/public/images/articles/gids-talen-zwitserland.jpg?itok=XmrGbdAi',
     'La Suisse est célèbre pour ses montagnes majestueuses et ses montres de précision.
    Le Cervin ⛰️ est l’un des sommets les plus emblématiques d’Europe.
    Le pays est neutre depuis plus de 200 ans et abrite de nombreuses organisations internationales.
    Ses spécialités incluent le chocolat, la fondue et la raclette 🍫🧀.
    Genève et Zurich sont des villes parmi les plus agréables au monde.'
+),
+(
+    'pays-bas',
+    'https://blog.chapkadirect.fr/wp-content/uploads/2021/03/AdobeStock_121442455-scaled.jpeg',
+    'Les Pays-Bas sont réputés pour leurs moulins à vent, leurs champs de tulipes 🌷 et leurs canaux pittoresques.
+    Amsterdam, la capitale, est célèbre pour ses musées et son ambiance unique.
+    Le pays est aussi un pionnier en matière d’écologie et de gestion de l’eau 💧.
+    Les habitants se déplacent souvent à vélo 🚲, symbole de la vie néerlandaise.
+    Le fromage gouda et les sabots en bois font partie de ses traditions emblématiques 🧀🇳🇱.'
+),
+(
+    'tchequie',
+    'https://www.guidesulysse.com/imageswebp/destinations/iStock-1053427682.webp',
+    'La Tchéquie, ou République tchèque 🇨🇿, est célèbre pour sa capitale Prague et son pont Charles emblématique.
+    Le pays possède un riche patrimoine médiéval et une architecture gothique et baroque impressionnante 🏰.
+    La bière tchèque est considérée comme l’une des meilleures au monde 🍺.
+    Située au cœur de l’Europe, la Tchéquie allie histoire, culture et paysages charmants.'
+),
+(
+    'autriche',
+    'https://ulysse.com/news/wp-content/uploads/2024/03/Hallstatt-village-en-Autriche-.jpg',
+    'L’Autriche 🇦🇹 est un pays alpin connu pour ses paysages spectaculaires et sa musique classique 🎵.
+    Vienne, la capitale, a vu naître des génies comme Mozart et Beethoven.
+    Les Alpes autrichiennes offrent des stations de ski renommées ⛷️ et des randonnées magnifiques.
+    L’Autriche séduit par son élégance impériale, ses cafés viennois ☕ et son art de vivre raffiné.'
 ),
 (
     'allemagne',
@@ -360,7 +385,7 @@ INSERT INTO geofind.description_lieu (lieu, image, description) VALUES
    Le pays aspire à rejoindre un jour l’Union européenne 🇪🇺.'
 ),
 (
-    'macedoine-du-nord',
+    'Macédoine du Nord',
     'https://plus.unsplash.com/premium_photo-1661962707619-e6ca73038eca?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bWFjJUMzJUE5ZG9pbmUlMjBkdSUyMG5vcmR8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000',
     'La Macédoine du Nord est un pays de montagnes et de lacs majestueux.
    Le lac d’Ohrid est l’un des plus anciens et profonds d’Europe 🌊.

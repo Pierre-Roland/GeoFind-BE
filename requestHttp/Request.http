@@ -76,5 +76,8 @@ Content-Type: application/json
   "country": "belgique"
 }
 
+### GET the most visited country
+GET http://localhost:8080/description/lieu/mostVisited/22
+Accept: application/json
 
 
