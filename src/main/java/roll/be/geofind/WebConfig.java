@@ -30,7 +30,7 @@ public class WebConfig {
         mailSender.setHost("smtp.sendgrid.net");
         mailSender.setPort(587);
         mailSender.setUsername("apikey");
-        mailSender.setPassword("System.getenv(\"SENDGRID_API_KEY\")");
+        mailSender.setPassword(System.getenv("SENDGRID_API_KEY"));
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
