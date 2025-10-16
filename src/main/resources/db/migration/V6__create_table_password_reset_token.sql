@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS geofind.password_reset_token (
+CREATE TABLE IF NOT EXISTS test.password_reset_token (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,
     token VARCHAR(100) NOT NULL,
     expirydate TIMESTAMP NULL,
