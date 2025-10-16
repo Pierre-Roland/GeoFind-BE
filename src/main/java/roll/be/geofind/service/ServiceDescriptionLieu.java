@@ -28,9 +28,6 @@ public class ServiceDescriptionLieu {
     public List<DescriptionLieu> getMostVisitedDescriptionLieus(int limit) {
         List<DescriptionLieu> ListeDesPaysLesPlusVisite = new ArrayList<>();
         List<Coordonnees> listMostTimesVisitedCountry = repositoryMap.findAllByOrderByTimesVisitedDesc();
-        System.out.println(listMostTimesVisitedCountry.get(17));
-        System.out.println(listMostTimesVisitedCountry.get(18));
-        System.out.println(listMostTimesVisitedCountry.get(21));
         for (int i = 0; i < limit; i++) {
             String country = listMostTimesVisitedCountry.get(i).getCountry();
             DescriptionLieu descriptionLieu = getDescriptionLieu(country);

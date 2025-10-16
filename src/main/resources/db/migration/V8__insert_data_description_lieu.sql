@@ -1,6 +1,6 @@
 INSERT INTO test.description_lieu (lieu, image, description) VALUES
 (
-     'belgique',
+     'Belgique',
      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbIUtO5M1rqxLe7qQJli5koxzGDhtqBOI6g&s',
      'La Belgique produit plus de 1 000 variétés de bière 🍺 — et certaines ont même leur propre verre officiel !
    Le pays détient le record du monde du plus long gouvernement sans accord (541 jours).
@@ -9,7 +9,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le Saxophone 🎷 a été inventé par un Belge — Adolphe Sax, né à Dinant au XIXᵉ siècle !'
 ),
 (
-    'france',
+    'France',
     'https://img.freepik.com/photos-gratuite/beau-plan-large-tour-eiffel-paris-entoure-eau-navires-sous-ciel-colore_181624-5118.jpg?semt=ais_hybrid&w=740&q=80',
     'La France est le pays le plus visité au monde pour sa culture et sa gastronomie.
    Paris, la Ville Lumière, attire des millions de touristes chaque année.
@@ -18,7 +18,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Ses vins et fromages sont célèbres aux quatre coins du globe 🍷🧀.'
 ),
 (
-    'luxembourg',
+    'Luxembourg',
     'https://www.visitluxembourg.com/images/gXDDLCNNHng/rs:fill:2500:0/cb:/crop:6008:4000:nowe:0:0/gravity:fp:0.5:0.5/aHR0cHM6Ly93d3cudmlzaXRsdXhlbWJvdXJnLmNvbS9maWxlYWRtaW4vdmlzaXRsdXhlbWJvdXJnL1BpY3R1cmVzL1JlaXNlemllbGUvTHV4ZW1idXJnX1N0YWR0L0x1eGVtYm91cmdfQ2l0eTVfLV9MQ1RPXzAxLmpwZw',
     'Le Luxembourg est l’un des plus petits pays d’Europe, mais aussi l’un des plus riches.
    Sa capitale est un centre financier international de premier plan.
@@ -27,7 +27,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Ses fortifications médiévales témoignent d’un passé stratégique important 🏰.'
 ),
 (
-    'suisse',
+    'Suisse',
     'https://viaverbia.be/sites/viaverbia-belgium.be/files/styles/news_image/public/images/articles/gids-talen-zwitserland.jpg?itok=XmrGbdAi',
     'La Suisse est célèbre pour ses montagnes majestueuses et ses montres de précision.
    Le Cervin ⛰️ est l’un des sommets les plus emblématiques d’Europe.
@@ -36,7 +36,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Genève et Zurich sont des villes parmi les plus agréables au monde.'
 ),
 (
-    'pays-bas',
+    'Pays-Bas',
     'https://blog.chapkadirect.fr/wp-content/uploads/2021/03/AdobeStock_121442455-scaled.jpeg',
     'Les Pays-Bas sont réputés pour leurs moulins à vent, leurs champs de tulipes 🌷 et leurs canaux pittoresques.
     Amsterdam, la capitale, est célèbre pour ses musées et son ambiance unique.
@@ -45,7 +45,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
     Le fromage gouda et les sabots en bois font partie de ses traditions emblématiques 🧀🇳🇱.'
 ),
 (
-    'tchequie',
+    'Tchéquie',
     'https://www.guidesulysse.com/imageswebp/destinations/iStock-1053427682.webp',
     'La Tchéquie, ou République tchèque 🇨🇿, est célèbre pour sa capitale Prague et son pont Charles emblématique.
     Le pays possède un riche patrimoine médiéval et une architecture gothique et baroque impressionnante 🏰.
@@ -53,7 +53,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
     Située au cœur de l’Europe, la Tchéquie allie histoire, culture et paysages charmants.'
 ),
 (
-    'autriche',
+    'Autriche',
     'https://ulysse.com/news/wp-content/uploads/2024/03/Hallstatt-village-en-Autriche-.jpg',
     'L’Autriche 🇦🇹 est un pays alpin connu pour ses paysages spectaculaires et sa musique classique 🎵.
     Vienne, la capitale, a vu naître des génies comme Mozart et Beethoven.
@@ -61,7 +61,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
     L’Autriche séduit par son élégance impériale, ses cafés viennois ☕ et son art de vivre raffiné.'
 ),
 (
-    'allemagne',
+    'Allemagne',
  'https://st.depositphotos.com/1100968/1361/i/450/depositphotos_13610013-stock-photo-cologne-cathedral-and-hohenzollern-bridge.jpg',
     'L’Allemagne est une puissance industrielle et culturelle majeure d’Europe.
    Berlin, sa capitale, symbolise la réunification après la chute du Mur en 1989.
@@ -70,7 +70,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Ses châteaux, comme Neuschwanstein, semblent tout droit sortis d’un conte de fées 🏰.'
 ),
 (
-    'royaume-uni',
+    'Royaume-Uni',
     'https://img.freepik.com/photos-gratuite/big-ben-westminster-bridge-au-coucher-du-soleil-londres-royaume-uni_268835-1395.jpg?semt=ais_hybrid&w=740&q=80',
     'Le Royaume-Uni est une monarchie constitutionnelle composée de quatre nations.
    Londres, sa capitale, abrite Big Ben, Buckingham Palace et le célèbre Tower Bridge.
@@ -79,7 +79,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le Royaume-Uni a quitté l’Union européenne en 2020, un tournant historique appelé Brexit.'
 ),
 (
-    'irlande',
+    'Irlande',
     'https://img.freepik.com/photos-gratuite/falaise-etretat_181624-19749.jpg?semt=ais_hybrid&w=740&q=80',
     'L’Irlande est surnommée l’île émeraude pour ses paysages verdoyants 🌿.
    Dublin, sa capitale, est connue pour la musique, la bière Guinness et son hospitalité.
@@ -88,7 +88,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    L’Irlande est aussi le berceau de nombreux écrivains célèbres comme James Joyce.'
 ),
 (
-    'islande',
+    'Islande',
     'https://img.freepik.com/photos-gratuite/montagnes-haifoss-cascade_181624-8585.jpg?semt=ais_hybrid&w=740&q=80',
     'L’Islande est une île volcanique unique, située entre l’Europe et l’Arctique.
    Ses paysages mêlent glaciers, volcans et sources chaudes spectaculaires ❄️🔥.
@@ -97,7 +97,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le pays produit presque toute son énergie grâce à la géothermie.'
 ),
 (
-    'norvège',
+    'Norvège',
     'https://img.freepik.com/photos-premium/village-pecheurs-nusfjord-norvege_163782-15633.jpg?semt=ais_hybrid&w=740&q=80',
     'La Norvège est célèbre pour ses fjords, ses montagnes et ses routes panoramiques.
    Oslo, la capitale, est moderne et respectueuse de l’environnement.
@@ -106,7 +106,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Les Vikings, originaires de cette région, ont marqué l’histoire européenne ⚔️.'
 ),
 (
-    'suede',
+    'Suède',
     'https://images.unsplash.com/photo-1509356843151-3e7d96241e11?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGElMjBzdSVDMyVBOGRlfGVufDB8fDB8fHww',
     'La Suède est un pays scandinave reconnu pour son design, son innovation et son bien-être social.
    Stockholm, bâtie sur quatorze îles, est souvent appelée la « Venise du Nord ».
@@ -115,7 +115,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Chaque année, le prix Nobel y est remis à Stockholm et Oslo.'
 ),
 (
-    'finlande',
+    'Finlande',
     'https://img.freepik.com/photos-gratuite/magnifique-paysage-naturel_23-2151922770.jpg?semt=ais_hybrid&w=740',
     'La Finlande est surnommée le pays des mille lacs 💧 et des aurores boréales.
    Helsinki, la capitale, combine modernité nordique et architecture néoclassique.
@@ -124,7 +124,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    C’est aussi le pays natal de Nokia et du célèbre Père Noël 🎅.'
 ),
 (
-    'danemark',
+    'Danemark',
     'https://img.freepik.com/photos-gratuite/belle-vue-port-batiments-colores-captures-copenhague-danemark_181624-8571.jpg?semt=ais_hybrid&w=740&q=80',
     'Le Danemark est un royaume scandinave reconnu pour son style de vie équilibré.
    Copenhague, sa capitale, est célèbre pour son port coloré de Nyhavn et la Petite Sirène 🧜‍♀️.
@@ -133,7 +133,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le pays est aussi le berceau des légos, inventés en 1932 🧩.'
 ),
 (
-    'estonie',
+    'Estonie',
     'https://img.freepik.com/photos-gratuite/vue-aerienne-par-drone-du-monastere-perisapanta-roumanie_1268-20349.jpg?semt=ais_hybrid&w=740&q=80',
     'L’Estonie est un petit pays baltique à la pointe du numérique 💻.
    Tallinn, sa capitale médiévale, est l’une des mieux préservées d’Europe.
@@ -142,7 +142,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    L’Estonie a retrouvé son indépendance en 1991 après la chute de l’URSS.'
 ),
 (
-    'lettonie',
+    'Lettonie',
     'https://img.freepik.com/photos-premium/clocher-lacated-ivanova-gora-dans-village-glubokovo-russie_932556-134.jpg?semt=ais_hybrid&w=740&q=80',
     'La Lettonie séduit par ses plages sur la mer Baltique et sa culture musicale.
    Riga, la capitale, est célèbre pour son architecture art nouveau unique en Europe.
@@ -151,7 +151,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    La Lettonie a rejoint l’Union européenne et l’euro en 2014.'
 ),
 (
-    'lituanie',
+    'Lituanie',
     'https://img.freepik.com/photos-premium/drapeau-lituanie-vieille-ville-vilnius_536604-3377.jpg?semt=ais_hybrid&w=740&q=80',
     'La Lituanie est le plus grand des pays baltes et un des plus anciens d’Europe.
    Vilnius, sa capitale, possède un centre historique classé par l’UNESCO.
@@ -160,7 +160,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    La croix et la tradition chrétienne occupent une place importante dans sa culture.'
 ),
 (
-    'espagne',
+    'Espagne',
     'https://img.freepik.com/photos-gratuite/vue-aube-tolede_1398-2077.jpg?semt=ais_hybrid&w=740&q=80',
     'L’Espagne séduit par son climat ensoleillé et sa diversité culturelle ☀️.
    Madrid, la capitale, abrite le musée du Prado et la Plaza Mayor.
@@ -169,7 +169,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Chaque région possède ses traditions, de la Catalogne à l’Andalousie.'
 ),
 (
-    'portugal',
+    'Portugal',
     'https://img.freepik.com/photos-gratuite/vue-aerienne-du-celebre-pont-porto-portugal_268835-3550.jpg?semt=ais_hybrid&w=740&q=80',
     'Le Portugal est un pays maritime à l’histoire exploratrice.
    Lisbonne, sa capitale, charme par ses collines et ses tramways jaunes emblématiques 🚋.
@@ -178,7 +178,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Ses plages de l’Algarve figurent parmi les plus belles d’Europe 🏖️.'
 ),
 (
-    'italie',
+    'Italie',
     'https://img.freepik.com/free-photo/view-tiber-river-center-rome-italy_1268-20450.jpg?semt=ais_hybrid&w=740&q=80',
     'L’Italie est le berceau de l’art, de la mode et de la gastronomie 🍝.
    Rome, la capitale, abrite le Colisée et des vestiges antiques exceptionnels.
@@ -187,7 +187,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le café, la pizza et la dolce vita font partie intégrante de sa culture.'
 ),
 (
-    'grece',
+    'Grece',
     'https://img.freepik.com/photos-premium/coucher-soleil-vue-oia-ile-santorin-grece_15083-382.jpg?semt=ais_hybrid&w=740&q=80',
     'La Grèce est le berceau de la démocratie et de la philosophie occidentale 🏺.
    Athènes, sa capitale, veille sur l’Acropole et le Parthénon millénaires.
@@ -196,7 +196,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le pays compte un patrimoine antique et mythologique inégalé ⚡.'
 ),
 (
-    'malte',
+    'Malte',
     'https://img.freepik.com/photos-premium/valette-skyline-eglise-notre-dame-du-mont-carmel-pro-cathedrale-anglicane-saint-paul-au-magnifique-coucher-soleil-valette-capitale-malte_218319-4933.jpg?semt=ais_hybrid&w=740&q=80',
     'Malte est un archipel méditerranéen au carrefour des civilisations.
    La Valette, sa capitale, est classée au patrimoine mondial de l’UNESCO.
@@ -205,7 +205,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Malte jouit d’un climat ensoleillé presque toute l’année ☀️.'
 ),
 (
-    'chypre',
+    'Chypre',
     'https://img.freepik.com/photos-gratuite/grottes-mer-dans-region-alanya-turquie_158595-6067.jpg?semt=ais_hybrid&w=740&q=80',
     'Chypre est une île méditerranéenne partagée entre Grecs et Turcs.
    Selon la légende, c’est ici que serait née la déesse Aphrodite 🌊.
@@ -214,7 +214,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le pays allie influences européennes et orientales.'
 ),
 (
-    'andorre',
+    'Andorre',
     'https://img.freepik.com/photos-gratuite/matin-dans-montagnes_1153-5992.jpg?semt=ais_hybrid&w=740&q=80',
     'Andorre est un petit pays niché dans les Pyrénées entre la France et l’Espagne 🏔️.
    Sa capitale, Andorre-la-Vieille, est réputée pour ses commerces détaxés.
@@ -223,7 +223,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Andorre possède un très haut niveau de vie malgré sa petite taille.'
 ),
 (
-    'saint-marin',
+    'Saint-Marin',
     'https://italievoyage.fr/wp-content/uploads/2014/04/saint-marin.jpg',
     'Saint-Marin est la plus ancienne république du monde, fondée au IVe siècle.
    Située sur le mont Titano, elle offre des vues spectaculaires sur l’Italie.
@@ -232,7 +232,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Saint-Marin frappe encore sa propre monnaie et émet ses timbres.'
 ),
 (
-    'vatican',
+    'Vatican',
     'https://plus.unsplash.com/premium_photo-1661964123160-8d049fa07f0c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dmF0aWNhbnxlbnwwfHwwfHx8MA%3D%3D',
     'Le Vatican est le plus petit État du monde, cœur spirituel du catholicisme ✝️.
    La basilique Saint-Pierre et la chapelle Sixtine attirent des millions de pèlerins.
@@ -241,7 +241,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    C’est un lieu de foi, d’histoire et d’art universellement reconnu.'
 ),
 (
-    'monaco',
+    'Monaco',
     'https://img.freepik.com/premium-photo/view-monaco-night_163782-3315.jpg?semt=ais_hybrid&w=740&q=80',
     'Monaco est un micro-État glamour de la Côte d’Azur 🌴.
    Monte-Carlo est célèbre pour son casino, son Grand Prix de Formule 1 et ses yachts luxueux.
@@ -250,7 +250,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Malgré sa petite taille, Monaco brille par son prestige international ✨.'
 ),
 (
-    'pologne',
+    'Pologne',
     'https://img.freepik.com/photos-gratuite/vue-fascinante-du-chateau-ile-trakai-trakai-lituanie-entoure-eau-calme_181624-10043.jpg?semt=ais_hybrid&w=740&q=80',
     'La Pologne est un pays riche d’histoire et de traditions européennes.
    Varsovie, sa capitale, a été presque entièrement reconstruite après la Seconde Guerre mondiale.
@@ -259,7 +259,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    La Pologne a rejoint l’Union européenne en 2004, marquant un tournant économique majeur.'
 ),
 (
-    'republique-tcheque',
+    'République-Tcheque',
     'https://images.unsplash.com/photo-1458150945447-7fb764c11a92?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ciVDMyVBOXB1YmxpcXVlJTIwdGNoJUMzJUE4cXVlfGVufDB8fDB8fHww&fm=jpg&q=60&w=3000',
     'La République tchèque est célèbre pour ses châteaux et ses bières parmi les meilleures du monde 🍺.
    Prague, sa capitale, est surnommée « la ville aux cent clochers ».
@@ -268,7 +268,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Ses stations thermales comme Karlovy Vary attirent des visiteurs depuis des siècles.'
 ),
 (
-    'slovaquie',
+    'Slovaquie',
     'https://img.freepik.com/photos-gratuite/beaux-paysages-varies_23-2151893073.jpg?semt=ais_hybrid&w=740&q=80',
     'La Slovaquie est un pays montagneux au cœur de l’Europe centrale.
    Bratislava, sa capitale, est située sur le Danube, à la frontière de l’Autriche et de la Hongrie.
@@ -277,7 +277,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    La Slovaquie combine nature, patrimoine et hospitalité chaleureuse.'
 ),
 (
-    'hongrie',
+    'Hongrie',
     'https://img.freepik.com/photos-premium/batiment-du-parlement-hongrois-danube-budapest-vue-epoustouflante-drone_1048944-22115921.jpg?semt=ais_hybrid&w=740&q=80',
     'La Hongrie est traversée par le Danube et célèbre pour sa capitale Budapest.
    Le Parlement hongrois est l’un des plus beaux bâtiments d’Europe.
@@ -286,7 +286,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le pays a un riche héritage musical, avec Liszt et Bartók parmi ses compositeurs.'
 ),
 (
-    'roumanie',
+    'Roumanie',
     'https://holaromania.com/wp-content/uploads/2020/07/sibiu-romania-atardecer-800x522.jpg',
     'La Roumanie est connue pour ses paysages variés et sa légende de Dracula 🧛.
    Le château de Bran, en Transylvanie, est souvent associé à ce mythe célèbre.
@@ -295,7 +295,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    La Roumanie marie traditions rurales et modernité urbaine.'
 ),
 (
-    'bulgarie',
+    'Bulgarie',
     'https://img.freepik.com/photos-gratuite/vue-vallee-pyrenees_1398-3241.jpg?semt=ais_hybrid&w=740',
     'La Bulgarie est l’un des plus anciens pays d’Europe, fondé au VIIe siècle.
    Sofia, sa capitale, est dominée par la cathédrale Alexandre-Nevski ⛪.
@@ -304,7 +304,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le pays est réputé pour sa culture orthodoxe et son folklore coloré.'
 ),
 (
-    'moldavie',
+    'Moldavie',
     'https://img.freepik.com/photos-gratuite/vue-aerienne-par-drone-chisinau-au-coucher-du-soleil-moldavie_1268-21808.jpg?semt=ais_hybrid&w=740&q=80',
     'La Moldavie est un petit pays viticole situé entre la Roumanie et l’Ukraine 🍇.
    Chisinau, la capitale, est une ville tranquille au charme soviétique.
@@ -313,7 +313,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    La Moldavie conserve une culture chaleureuse et authentique.'
 ),
 (
-    'ukraine',
+    'Ukraine',
     'https://img.freepik.com/photos-gratuite/paysage-forets-montagnes_1398-2275.jpg?semt=ais_hybrid&w=740&q=80',
     'L’Ukraine est le plus grand pays entièrement situé en Europe.
    Kiev, sa capitale, est un haut lieu de l’histoire slave et orthodoxe.
@@ -322,7 +322,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le monastère de la Laure de Petchersk est l’un de ses trésors spirituels.'
 ),
 (
-    'bielorussie',
+    'Biélorussie',
     'https://img.freepik.com/photos-gratuite/tir-vertical-lac-entoure-formations-rocheuses-stavern-norvege_181624-10446.jpg?semt=ais_incoming&w=740&q=80',
     'La Biélorussie, ou Belarus, est un pays aux vastes forêts et lacs paisibles.
    Minsk, sa capitale, témoigne de l’architecture soviétique monumentale.
@@ -331,7 +331,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    La culture biélorusse reste profondément attachée à la nature et au folklore.'
 ),
 (
-    'slovenie',
+    'Slovénie',
     'https://img.freepik.com/photos-gratuite/chateau-historique-au-sommet-colline-couverte-feuilles-colorees-bled-slovenie_181624-7341.jpg?semt=ais_incoming&w=740&q=80',
     'La Slovénie est un petit joyau vert entre les Alpes et l’Adriatique 🌿.
    Le lac de Bled, surmonté d’un château, est l’un des sites les plus photographiés du pays.
@@ -340,7 +340,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Ses grottes de Postojna attirent des visiteurs du monde entier 🕳️.'
 ),
 (
-    'croatie',
+    'Croatie',
     'https://img.freepik.com/photos-gratuite/montagnes-vertes-mer-bleue-olympiada-halkidiki-grece_1268-16135.jpg?semt=ais_hybrid&w=740&q=80',
     'La Croatie est célèbre pour sa côte adriatique et ses villes médiévales.
    Dubrovnik, surnommée la « perle de l’Adriatique », est inscrite à l’UNESCO 🏰.
@@ -349,7 +349,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le pays a accueilli le tournage de nombreuses scènes de Game of Thrones 🎬.'
 ),
 (
-    'bosnie-herzegovine',
+    'Bosnie-Herzégovine',
     'https://www.terra-balka.com/wp-content/uploads/adobestock-118602044-kravice.jpeg',
     'La Bosnie-Herzégovine est un pays multiculturel au cœur des Balkans.
    Mostar est célèbre pour son pont reconstruit, symbole de réconciliation 🌉.
@@ -358,7 +358,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    La Bosnie renaît lentement après les conflits des années 1990.'
 ),
 (
-    'serbie',
+    'Serbie',
     'https://img.freepik.com/photos-gratuite/vue-du-chateau-paysage-naturel_23-2150984843.jpg?semt=ais_hybrid&w=740&q=80',
     'La Serbie est un pays historique situé sur les rives du Danube.
    Belgrade, sa capitale, est l’une des plus anciennes villes d’Europe.
@@ -367,7 +367,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Le pays est connu pour son hospitalité et son esprit chaleureux.'
 ),
 (
-    'montenegro',
+    'Monténégro',
     'https://img.freepik.com/photos-gratuite/vue-panoramique-arbres-montagnes-verdoyantes-maisons-lac_23-2148153682.jpg?semt=ais_hybrid&w=740&q=80',
     'Le Monténégro, petit mais spectaculaire, borde la mer Adriatique 🌅.
    La baie de Kotor, classée à l’UNESCO, rappelle un fjord norvégien.
@@ -376,7 +376,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Sa nature intacte en fait un joyau méconnu des Balkans.'
 ),
 (
-    'kosovo',
+    'Kosovo',
     'https://img.freepik.com/photos-gratuite/portrait-petit-lac-entre-montagnes-petite-ville-pres-base-montagne_181624-5512.jpg?semt=ais_hybrid&w=740&q=80',
     'Le Kosovo est le plus jeune État d’Europe, ayant déclaré son indépendance en 2008.
    Pristina, la capitale, symbolise la jeunesse et la reconstruction du pays.
@@ -394,7 +394,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Ses habitants sont fiers de leur culture et de leurs traditions anciennes.'
 ),
 (
-    'albanie',
+    'Albanie',
     'https://img.freepik.com/photos-gratuite/lac-entre-montagnes_1112-544.jpg?semt=ais_hybrid&w=740&q=80',
     'L’Albanie est un pays en plein essor touristique sur la mer Adriatique.
    Tirana, la capitale, s’est transformée avec ses façades colorées et sa vitalité.
@@ -403,7 +403,7 @@ INSERT INTO test.description_lieu (lieu, image, description) VALUES
    Les montagnes et l’accueil chaleureux font le charme du pays.'
 ),
 (
-    'turquie',
+    'Turquie',
     'https://img.freepik.com/photos-gratuite/scenic-du-lever-soleil-ocean-istanbul-turquie_53876-32163.jpg?semt=ais_hybrid&w=740&q=80',
     'La Turquie relie l’Europe et l’Asie, entre tradition et modernité 🌍.
    Istanbul, anciennement Byzance et Constantinople, est une ville légendaire.
