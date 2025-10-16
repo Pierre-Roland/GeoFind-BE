@@ -1,5 +1,5 @@
 -- Insertion de données initiales
-INSERT INTO geofind.coordonnees (zoom, center1, center2, country, times_visited) VALUES
+INSERT INTO test.coordonnees (zoom, center1, center2, country, times_visited) VALUES
 #Europe
 (7.5, 50.8503, 4.3517, 'Belgique', 0),
 (6, 46.603354, 1.888334, 'France', 0),

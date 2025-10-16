@@ -1,4 +1,4 @@
-INSERT INTO geofind.description_lieu (lieu, image, description) VALUES
+INSERT INTO test.description_lieu (lieu, image, description) VALUES
 (
      'belgique',
      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBbIUtO5M1rqxLe7qQJli5koxzGDhtqBOI6g&s',
