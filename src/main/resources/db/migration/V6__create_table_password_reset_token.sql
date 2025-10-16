@@ -1,11 +1,12 @@
 CREATE TABLE IF NOT EXISTS geofind.password_reset_token (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
     token VARCHAR(100) NOT NULL,
     expirydate TIMESTAMP NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     user_id BIGINT NOT NULL,
-    CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES geofind.users(id) ON DELETE CASCADE,
     CONSTRAINT uq_token UNIQUE (token)
 );
 
-
+-- Ajouter la FK séparément pour éviter certains problèmes TiDB
+ALTER TABLE geofind.password_reset_token
+    ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES geofind.users(id) ON DELETE CASCADE;
