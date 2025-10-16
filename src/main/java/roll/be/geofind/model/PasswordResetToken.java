@@ -22,6 +22,7 @@ public class PasswordResetToken {
 
     private String token;
 
+    @Column(name = "expirydate")
     private LocalDateTime expiryDate;
 
     @ManyToOne
